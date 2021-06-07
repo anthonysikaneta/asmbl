@@ -1,10 +1,11 @@
-/* @import url("parallax.css"); */
 @import url("hero.css");
 @import url("nav.css");
+@import url("parallax.css");
 @import url("table.css");
 
 body {
   --background-color: #333;
+  --black: #000;
   --nav-background-color: #000;
   /* #37474f; */
   --hover-color: #1d9bfc;

@@ -6,6 +6,8 @@ nav {
   width: 1300px;
   position: fixed;
   top: 0;
+  font-weight: 900;
+  z-index: 3;
 }
 
 nav a {
