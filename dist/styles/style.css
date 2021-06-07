@@ -55,12 +55,34 @@ img {
   width: 100%;
 }
 
-.corner-logo {
+.asmbl-logo {
+  left: 0;
+}
+
+.paperless-logo {
+  right: -28%;
+}
+
+.asmbl-logo,
+.paperless-logo {
+  display: flex;
+  align-items: flex-end;
+
   bottom: 0;
   height: auto;
   position: fixed;
-  right: -33%;
   z-index: 1;
+}
+
+.asmbl-logo a,
+.paperless-logo a {
+  color: inherit;
+  cursor: auto;
+  text-decoration: none;
+}
+
+.paperless-logo-img {
+  margin: -2em;
 }
 
 *,
