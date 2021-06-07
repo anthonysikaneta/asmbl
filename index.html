@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Viewer</title>
+  <!-- Import the component -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <nav>
+    <div class="links">
+      <a href="#1">Conceptual Design</a>
+      <a href="#2">Initializing into AR</a>
+      <a href="#3">Object Interaction</a>
+      <a href="#4">Assembly</a>
+      <a href="#5">Scope of Work</a>
+      <a href="#0">Back to Top</a>
+    </div>
+  </nav>
+  
+  <div class="scrolling-box">
+    <section id="0" class="intro">
+      <!-- <h1>✅ ASSMBL</h1> -->
+      <img src="./assets/logo.png" alt="ASMBL Logo" style="max-width: 400px;">
+      <p>assembly made simple, expertise built in.</p>
+      <p class="copywrite">Prototype Proposal prepared by Paperless</p>
+    </section>
+    <section id="1" class="first">
+      <h1>Scan Barcode</h1>
+      <p>...then identify the product. Once the product has been accurately <br /> identified the user is prompted to allow AR initialization.</p>
+    </section>
+    <section id="2" class="second">
+      <div class="parallax">
+        <div class="parallax__layer parallax__layer--base">
+          <h1>Scan the Target Areas</h1>
+          <p>Plan where to assemble your furniture and also <br /> where to put it once it is done.</p>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+          <model-viewer
+          src="assets/lamp_post/LampPost.glb"
+          alt="A 3D model of an astronaut"
+          shadow-intensity="1"
+          ar ar-modes="webxr scene-viewer quick-look"
+          environment-image="neutral"
+          auto-rotate camera-controls></model-viewer>
+        </div>
+      </div>
+    </section>
+    <section id="3" class="third">
+      <h1>Instruction Scanning</h1>
+      <p>Conducting a successful build involves an intuitive instruction guide, <br/> generated from the original blueprint, <br /> with visual AR cues displayed to aid the user in tool selection and piece placement.</p>
+    </section>
+    <section id="4" class="fourth">
+      <h1>putting things together</h1>
+      <p>With the tools and pieces optimized for the target work areas, <br/> the assembly can commence.</p>
+    </section>
+    <section id="5">
+      <h1>Scope of Work & Cost</h1>
+      <!-- <p><img src="./assets/scope.png" alt="scope of work"></p> -->
+      <h3>Conceptual Design - Project Costing Schedule</h3>
+
+      <table style="width: 70%;">
+        <tr>
+          <th>No</th>
+          <th>Name of Resource</th>
+          <th>Period (Working Days)</th>
+          <th>Total CAD</th>
+          <th>Total USD</th>
+          <th>Rate ($ per hour - USD)</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Barcode Scanning</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Product Identication</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Prompt for Device Permission</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Room & Space Scanning</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Furniture Placement</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Instruction Manual Scanning</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Tool Selection</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Piece Placement</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Step Sequencer</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>User Notifications</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>AR Flow Interaction</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>ARFrame</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Prototype/Mockup</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td> Cost</td>
+          <td>30</td>
+          <td>7,200</td>
+          <td>5,982</td>
+          <td>25</td>
+        </tr>
+      </table>
+    </section>
+    <!-- <section id="4">
+      <h1>what is ✅ ASSMBL fixing?</h1>
+      <p>Paper instruction manuals are something we live with, versus something we evolve and optimize.</p>
+      <ul>
+        <li>
+          <h2>why?</h2>
+          <p>Instruction manuals don’t suit the global focus on</p>
+          <p>environmental sustainability</p>
+        </li>
+        <li>
+          <h2>what?</h2>
+          <p>Lots of paper, lots of steps, lots of confusion</p>
+        </li>
+        <li>
+          <h2>how?</h2>
+          <p>Mixed/augmented reality overlays allow what you see through</p>
+          <p>the camera to be highlighted & assembled step-by-step</p>
+        </li>
+      </ul>
+    </section> -->
+  </div>
+
+  <aside class="corner-logo">
+    <img src="assets/logo3.png" alt="corner logo" class="click-me">
+  </aside>
+  <script>
+    var dafuq = document.querySelector('.first').style.backgroundImage;
+    document.querySelector('.click-me').addEventListener('click', () => {
+      console.log(dafuq)
+    });
+  </script>
+</body>
+</html>

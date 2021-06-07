@@ -1,0 +1,15 @@
+nav {
+  background-color: var(--nav-background-color);
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  width: 1300px;
+  position: fixed;
+  top: 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
