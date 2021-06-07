@@ -37,11 +37,6 @@ h2 {
   text-transform: uppercase;
 }
 
-img {
-  height: auto;
-  width: 40%;
-}
-
 .intro {
   color: var(--secondary-text-color);
 }
@@ -60,16 +55,39 @@ img {
 }
 
 .paperless-logo {
-  right: -28%;
+  right: 0;
+}
+
+.asmbl-logo .bio::before {
+  content: "Created for:";
+}
+
+.paperless-logo .bio::before {
+  content: "Created by:";
+}
+
+.asmbl-logo .bio,
+.paperless-logo .bio {
+  margin-left: 1em;
+}
+
+.asmbl-logo img {
+  padding: 2em;
+  width: 200px;
+}
+
+.paperless-logo img {
+  padding: 0.1em;
+  width: 250px;
 }
 
 .asmbl-logo,
 .paperless-logo {
+  background-color: var(--black);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 
   bottom: 0;
-  height: auto;
   position: fixed;
   z-index: 1;
 }
@@ -79,10 +97,6 @@ img {
   color: inherit;
   cursor: auto;
   text-decoration: none;
-}
-
-.paperless-logo-img {
-  margin: -2em;
 }
 
 *,
